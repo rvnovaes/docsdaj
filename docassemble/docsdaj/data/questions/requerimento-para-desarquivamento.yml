@@ -103,16 +103,20 @@ fields:
     default: |
       ${ today(format='yyyy-MM-dd') }
   - "Razões para desarquivamento": razoes_desarquivamento
+    hint: "Motivos para desarquivar o caso"
+    required: True
   - "Data do Arquivamento": data_arquivamento
     datatype: date
     default: |
       ${ today(format='yyyy-MM-dd') }
   - "Motivos do Arquivamento": motivos_arquivamento
-  - "Teve processo?": decisao
+    hint: "Motivos que levaram ao arquivamento do caso"
+    required: True
+  - "Houve processo?": decisao
     datatype: yesnoradio
   - "Número da ação:": num_acao
     show if: decisao
-    required: True
+    required: False
 
 
 
