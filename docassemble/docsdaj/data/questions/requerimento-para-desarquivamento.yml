@@ -4,7 +4,6 @@ metadata:
 initial: True
 code: |
   set_language('pt')
-  complemento = ""
 ---
 features:
   navigation: horizontal
@@ -49,9 +48,11 @@ fields:
     hint: "Rua"
   - "Número residencial": num_residencial
     hint: 123
-  - "Complemento": complemento
-    hint: 302
-    required: False
+  - "Apartamento?": apartamento
+    datatype: yesnoradio
+  - "Complemento" : complemento
+    show if: apartamento
+    required: True
   - "Bairro": bairro
     hint: "Centro"
   - 'Estado:': sigla_estado
@@ -149,4 +150,3 @@ attachment:
   validformats:
     - pdf
     - docx
----
