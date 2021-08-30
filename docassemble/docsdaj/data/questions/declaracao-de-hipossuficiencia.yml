@@ -41,6 +41,7 @@ fields:
     datatype: string
     default: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
   - "Data: ": data
     required: True
     datatype: date

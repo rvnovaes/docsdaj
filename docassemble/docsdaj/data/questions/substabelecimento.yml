@@ -88,7 +88,9 @@ question: Local e data
 fields:
   - 'Cidade:': cidade
     datatype: string
+    default: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
   - 'Data assinatutura:': data
     datatype: date
     required: True

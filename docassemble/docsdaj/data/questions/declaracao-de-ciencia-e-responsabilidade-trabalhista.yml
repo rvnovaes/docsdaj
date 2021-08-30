@@ -45,9 +45,10 @@ fields:
   - "Número do Caso:": num_caso
     hint: "Ex.: 27"
   - "Cidade de assinatura:": cidade
+    datatype: string
     default: Belo Horizonte
-    hint: "Ex.: Belo Horizonte"
     required: True
+    hint: "Ex.: Belo Horizonte"
   - "Data de assinatura:": data
     datatype: date
     default: |

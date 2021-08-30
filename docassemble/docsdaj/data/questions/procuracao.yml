@@ -86,8 +86,8 @@ fields:
   - 'Local da Assinatura:': cidade
     datatype: string
     default: Belo Horizonte
-    hint: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
 ---
 mandatory: True
 section: Checagem

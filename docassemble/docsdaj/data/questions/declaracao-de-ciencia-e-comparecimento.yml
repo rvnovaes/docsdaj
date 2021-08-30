@@ -41,10 +41,11 @@ fields:
   - 'Data da procuração:': data
     datatype: date
     required: True
-  - 'Local da assinatura:': cidade
+  - 'Local da assinatura:':  cidade
     datatype: string
-    hint: Belo Horizonte
+    default: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
 mandatory: True
 ---
 progress: 87

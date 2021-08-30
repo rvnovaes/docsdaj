@@ -73,9 +73,11 @@ fields:
   - "Bairro:": bairro
     hint: "Ex.: Centro"
     required: True
-  - "Cidade:": cidade    
-    hint: "Ex.: Belo Horizonte"
+  - "Cidade:": cidade
+    datatype: string
+    default: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
   - 'Estado:': sigla_estado 
     datatype: dropdown
     choices: 

@@ -38,9 +38,10 @@ fields:
   - 'Tipo da Ação:': tipo_acao 
     required: True
   - "Cidade": cidade
+    datatype: string
     default: Belo Horizonte
-    hint: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
   - "Data de Assinatura": data
     datatype: date
     default: |
