@@ -46,7 +46,7 @@ fields:
   - "Número do Caso": num_caso
     hint: 1
   - "Logradouro": logradouro
-    hint: "Rua"
+    hint: "Avenida João Pinheiro"
   - "Número residencial": num_residencial
     hint: 123
   - "Complemento": complemento
@@ -128,6 +128,9 @@ question: |
   Local de Emissão da Declaração: ${ cidade }
   Número do Caso: ${ num_caso }
   Data de Assinatura: ${ data }
+  Motivo do Arquivamento: ${ motivos_arquivamento }
+  Razões para desarquivamento: ${ razoes_desarquivamento }
+  Logradouro: ${ logradouro }
 back button: True
 back button label: |
   Ops, errei. Voltar
