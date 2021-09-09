@@ -54,7 +54,7 @@ fields:
     required: False
   - "Bairro": bairro
     hint: "Centro"
-  - 'Estado:': sigla_estado
+  - 'Estado': sigla_estado
     datatype: dropdown
     choices:
     - AC
@@ -95,14 +95,14 @@ fields:
        minlength: |
          Formato inválido!
     hint: "30160-100"
-  - "Cidade de domicílio": cidade
+  - "Cidade de Domicílio": cidade
     hint: "Belo Horizonte"
     required: True
   - "Data de Assinatura": data
     datatype: date
     default: |
       ${ today(format='yyyy-MM-dd') }
-  - "Razões para desarquivamento": razoes_desarquivamento
+  - "Razões para Desarquivamento": razoes_desarquivamento
   - "Data do Arquivamento": data_arquivamento
     datatype: date
     default: |
@@ -110,7 +110,7 @@ fields:
   - "Motivos do Arquivamento": motivos_arquivamento
   - "Teve processo?": decisao
     datatype: yesnoradio
-  - "Número da ação:": num_acao
+  - "Número da ação": num_acao
     show if: decisao
     required: True
 
