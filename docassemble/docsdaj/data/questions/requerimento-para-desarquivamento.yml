@@ -136,6 +136,8 @@ buttons:
 ---
 section: Conclusão
 progress: 100
+buttons:
+  - Sair: exit
 mandatory: True
 question: |
   Aqui está o seu documento:
