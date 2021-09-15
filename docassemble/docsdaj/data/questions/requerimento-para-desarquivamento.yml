@@ -141,6 +141,12 @@ question: |
   Logradouro: ${ logradouro }
 
   Bairro: ${ bairro }
+
+  Número residencial: ${ num_residencial }
+
+  CEP: ${ cep }
+
+  Estado: ${ sigla_estado }
 back button: True
 back button label: |
   Ops, errei. Voltar
