@@ -4,6 +4,7 @@ metadata:
 initial: True
 code: |
   set_language('pt')
+  complemento = ""
 ---
 features:
   navigation: horizontal
@@ -48,11 +49,9 @@ fields:
     hint: "Rua"
   - "Número residencial": num_residencial
     hint: 123
-  - "Apartamento?": apartamento
-    datatype: yesnoradio
-  - "Complemento" : complemento
-    show if: apartamento
-    required: True
+  - "Complemento": complemento
+    hint: 302
+    required: False
   - "Bairro": bairro
     hint: "Centro"
   - 'Estado:': sigla_estado
@@ -97,8 +96,10 @@ fields:
          Formato inválido!
     hint: "30160-100"
   - "Cidade de domicílio": cidade
-    hint: "Belo Horizonte"
+    datatype: string
+    default: Belo Horizonte
     required: True
+    hint: "Ex.: Belo Horizonte"
   - "Data de Assinatura": data
     datatype: date
     default: |
@@ -150,3 +151,4 @@ attachment:
   validformats:
     - pdf
     - docx
+---
